@@ -99,40 +99,7 @@ a {
   object-fit: cover;
 }
 
-/* Circles around photo */
-
-.circle {
-  position: absolute;
-  border: 1px solid #7a8068;
-  border-radius: 50%;
-}
-
-.circle-one {
-  width: 245px;
-  height: 245px;
-}
-
-.circle-two {
-  width: 290px;
-  height: 180px;
-  transform: rotate(35deg);
-}
-
-.circle-three {
-  width: 280px;
-  height: 160px;
-  transform: rotate(-35deg);
-}
-
-/* Hide decorative lines on mobile */
-
-.line {
-  display: none;
-}
-
-/* =========================
-   HERO NAVIGATION
-========================= */
+/* HERO NAVIGATION */
 
 .hero-nav {
   position: absolute;
@@ -184,10 +151,7 @@ a {
   bottom: 35px;
   right: 15px;
 }
-
-/* =========================
-   SOCIAL ICONS
-========================= */
+/* SOCIAL ICONS */
 
 .social-links {
   position: absolute;
@@ -236,22 +200,13 @@ a {
   color: #f3efe6;
 }
 
-/* =========================
-   HERO INTRO
-========================= */
-
 .hero-intro {
   position: absolute;
-
   left: 50%;
   bottom: 35px;
-
   transform: translateX(-50%);
-
   width: 90%;
-
   text-align: center;
-
   z-index: 5;
 }
 
@@ -264,33 +219,20 @@ a {
   font-size: 31px;
   line-height: 1.05;
   font-weight: normal;
-
   margin: 8px 0;
 }
 
 .intro-line {
   width: 30px;
   height: 1px;
-
   background-color: #302f29;
-
   margin: 10px auto;
 }
 
 .hero-intro p {
   font-size: 12px;
 }
-
-/* Scroll */
-
-.scroll-down {
-  display: none;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
+/* About */
 .about {
   background-color: #d8d0c1;
 }
@@ -314,18 +256,13 @@ a {
 
 .about-image::after {
   content: "";
-
   position: absolute;
-
   width: 70%;
   height: 70%;
-
   right: -12px;
   bottom: -12px;
-
   background-color: #7a8068;
   opacity: 0.25;
-
   z-index: 0;
 }
 
@@ -342,10 +279,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-
   margin-top: 25px;
   padding-top: 20px;
-
   border-top: 1px solid #7a8068;
 }
 
@@ -371,10 +306,7 @@ a {
 .detail strong {
   font-size: 13px;
 }
-
-/* =========================
-   SKILLS
-========================= */
+/* Skillss */
 
 .skills {
   background-color: #7a8068;
@@ -401,11 +333,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-
   border: 1px solid currentColor;
-
   padding: 9px 14px;
-
   font-size: 12px;
 }
 
@@ -445,11 +374,7 @@ a {
 .skill-card p {
   font-size: 12px;
 }
-
-/* =========================
-   PROJECTS
-========================= */
-
+/* Projects */
 .projects {
   background-color: #f3efe6;
 }
@@ -512,11 +437,7 @@ a {
 
   font-size: 11px;
 }
-
-/* =========================
-   CONTACT
-========================= */
-
+/* Contact */
 .contact {
   background-color: #d8d0c1;
 }
@@ -572,9 +493,7 @@ a {
 .form-group {
   display: flex;
   flex-direction: column;
-
   width: 100%;
-
   margin-bottom: 15px;
 }
 
@@ -586,13 +505,9 @@ a {
 .form-group input,
 .form-group textarea {
   width: 100%;
-
   border: 1px solid #7a8068;
-
   background-color: #f3efe6;
-
   padding: 11px;
-
   font-family: inherit;
   color: #302f29;
 }
@@ -603,25 +518,17 @@ a {
 
 .contact-form button {
   border: none;
-
   background-color: #302f29;
   color: #f3efe6;
-
   padding: 11px 18px;
-
   font-family: inherit;
-
   cursor: pointer;
 }
-
-/* =========================
-   FOOTER
-========================= */
+/* Footer */
 
 footer {
   background-color: #302f29;
   color: #f3efe6;
-
   padding: 20px 0;
 }
 
@@ -629,7 +536,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
   text-align: center;
 }
 
@@ -641,18 +547,12 @@ footer {
 .footer-content p {
   font-size: 10px;
 }
-/* ==================================================
-   TABLET
-   768px AND ABOVE
-================================================== */
+/* TABLET 768px AND ABOVE */
 
 @media (min-width: 768px) {
   .container {
     width: 90%;
   }
-
-  /* HERO */
-
   .hero {
     min-height: 850px;
   }
@@ -713,19 +613,13 @@ footer {
     right: 50px;
   }
 
-  /* Hero intro */
-
   .hero-intro {
     left: auto;
     right: 5%;
-
     bottom: auto;
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 230px;
-
     text-align: left;
   }
 
@@ -741,13 +635,9 @@ footer {
     font-size: 14px;
   }
 
-  /* Social */
-
   .social-links {
     left: 30px;
   }
-
-  /* About */
 
   .about-content {
     flex-direction: row;
@@ -765,8 +655,6 @@ footer {
     gap: 35px;
   }
 
-  /* Skills */
-
   .skills-layout {
     flex-direction: row;
     align-items: flex-start;
@@ -779,11 +667,8 @@ footer {
 
   .skills-grid {
     flex: 2;
-
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* Projects */
 
   .projects-layout {
     flex-direction: row;
@@ -797,11 +682,8 @@ footer {
 
   .projects-grid {
     flex: 2;
-
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* Contact */
 
   .contact-content {
     flex-direction: row;
@@ -821,19 +703,12 @@ footer {
     gap: 15px;
   }
 
-  /* Footer */
-
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
   }
 }
-
-/* ==================================================
-   DESKTOP
-   1024px AND ABOVE
-================================================== */
 
 @media (min-width: 1024px) {
   .hero {
@@ -849,8 +724,6 @@ footer {
     width: 300px;
     height: 300px;
   }
-
-  /* Navigation */
 
   .about-nav {
     left: 60px;
@@ -868,8 +741,6 @@ footer {
     right: 60px;
   }
 
-  /* Hero intro */
-
   .hero-intro {
     right: 8%;
     width: 270px;
@@ -883,19 +754,9 @@ footer {
     font-size: 15px;
   }
 
-  /* Scroll */
-
-  .scroll-down {
-    display: flex;
-  }
-
-  /* Sections */
-
   .section {
     padding: 90px 0;
   }
-
-  /* Skills */
 
   .skills-layout {
     gap: 60px;
@@ -904,8 +765,6 @@ footer {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  /* Projects */
 
   .projects-layout {
     gap: 60px;
@@ -918,8 +777,6 @@ footer {
   .project-card img {
     height: 140px;
   }
-
-  /* Contact */
 
   .contact-content {
     gap: 60px;
