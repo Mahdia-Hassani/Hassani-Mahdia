@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Georgia, "Times New Roman", serif;
   background-color: #fff;
@@ -74,7 +78,7 @@ a {
 .hero-content {
   width: 100%;
   max-width: 430px;
-  height: 480px;
+  min-height: 480px;
   margin: 30px auto;
   position: relative;
   display: flex;
@@ -117,6 +121,15 @@ a {
   gap: 8px;
   font-size: 16px;
   z-index: 5;
+}
+
+.hero-nav span:last-child {
+  transition: color 0.3s ease;
+}
+
+.hero-nav:hover span:last-child {
+  color: #6b8e23;
+  text-decoration: underline;
 }
 
 .nav-icon {
@@ -163,7 +176,7 @@ a {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 8px;
   z-index: 6;
@@ -186,13 +199,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3efe6;
-  font-size: 12px;
-}
-
-.social-links a {
   background-color: #7a8068;
-  color: #f3efe6;
+  font-size: 12px;
 }
 
 .social-links {
@@ -212,26 +220,26 @@ a {
 }
 
 .hero-intro > span {
-  font-size: 9px;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12rem;
 }
 
 .hero-intro h1 {
-  font-size: 31px;
+  font-size: 2rem;
   line-height: 1.05;
   font-weight: normal;
   margin: 8px 0;
 }
 
 .intro-line {
-  width: 30px;
+  width: 2rem;
   height: 1px;
   background-color: #302f29;
   margin: 10px auto;
 }
 
 .hero-intro p {
-  font-size: 12px;
+  font-size: 0.875rem;
 }
 
 /* About */
@@ -275,7 +283,7 @@ a {
 
 .about-text > p {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .about-details {
@@ -340,9 +348,6 @@ a {
   border: 1px solid currentColor;
   padding: 9px 14px;
   font-size: 12px;
-}
-
-.outline-button {
   background-color: #302f29;
   color: #f3efe6;
 }
@@ -368,13 +373,13 @@ a {
 }
 
 .skill-card h3 {
-  font-size: 17px;
+  font-size: 1.125rem;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 .skill-card p {
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* Projects */
@@ -403,7 +408,7 @@ a {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: 15px;
 }
 
@@ -413,7 +418,7 @@ a {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -422,13 +427,13 @@ a {
 }
 
 .project-info h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 .project-info p {
-  font-size: 12px;
+  font-size: 0.875rem;
   margin-bottom: 12px;
 }
 
@@ -461,7 +466,7 @@ a {
 
 .contact-intro > p {
   max-width: 350px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .contact-details {
@@ -488,7 +493,8 @@ a {
 .form-row {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .form-group {
@@ -499,7 +505,7 @@ a {
 }
 
 .form-group label {
-  font-size: 11px;
+  font-size: 0.75rem;
   margin-bottom: 5px;
 }
 
@@ -542,12 +548,12 @@ footer {
 }
 
 .footer-content h3 {
-  font-size: 14px;
+  font-size: 0.8;
   font-weight: normal;
 }
 
 .footer-content p {
-  font-size: 10px;
+  font-size: 0.75rem;
 }
 
 /* =========================================
@@ -569,22 +575,6 @@ TABLET - 768px AND ABOVE
     width: 270px;
     height: 270px;
   }
-
-  .circle-one {
-    width: 330px;
-    height: 330px;
-  }
-
-  .circle-two {
-    width: 380px;
-    height: 230px;
-  }
-
-  .circle-three {
-    width: 360px;
-    height: 200px;
-  }
-
   .hero-nav {
     font-size: 13px;
   }
@@ -625,7 +615,7 @@ TABLET - 768px AND ABOVE
   }
 
   .hero-intro h1 {
-    font-size: 42px;
+    font-size: 2.5rem;
   }
 
   .intro-line {
@@ -633,7 +623,7 @@ TABLET - 768px AND ABOVE
   }
 
   .hero-intro p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .social-links {
@@ -692,6 +682,7 @@ TABLET - 768px AND ABOVE
 
   .projects-grid {
     flex: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Contact */
@@ -711,7 +702,6 @@ TABLET - 768px AND ABOVE
 
   .form-row {
     flex-direction: row;
-    gap: 15px;
   }
 
   /* Footer */
@@ -765,16 +755,15 @@ DESKTOP - 1024px AND ABOVE
   }
 
   .hero-intro {
-    right: 5%;
     width: 280px;
   }
 
   .hero-intro h1 {
-    font-size: 50px;
+    font-size: 3rem;
   }
 
   .hero-intro p {
-    font-size: 16px;
+    font-size: 1.5rem;
   }
 
   .section {
